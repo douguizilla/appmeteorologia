@@ -20,8 +20,8 @@ object RemoteModule {
 
     @Provides
     @Singleton
-    fun provideHttpClient() : HttpClient{
-        return HttpClient(Android){
+    fun provideHttpClient(): HttpClient {
+        return HttpClient(Android) {
             install(Logging) {
                 logger = Logger.SIMPLE
             }
